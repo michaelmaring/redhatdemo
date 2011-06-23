@@ -1,0 +1,9 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+
+<% @localhostentry.each do |entry| -%>
+<%= entry['ipv4addr'] %> <%= entry['fqdn'] %> <%= entry['fqdn'].split('.')[0] %>
+<% end -%>
+
+<% @nodeentries.each do |entry| -%>
+<%= entry['ipv4addr'] %> <%= entry['fqdn'] %> <%= entry['fqdn'].split('.')[0] %>
+<% end -%>

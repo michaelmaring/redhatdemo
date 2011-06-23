@@ -1,0 +1,14 @@
+.rake_test_cache
+.chef/client.rb
+.chef/knife.rb
+.chef/checksums
+*.pem
+tmp/*
+.rake_test_cache
+*.swp
+*.swo
+*~
+scratch.sh
+data_bags/secrets
+metadata.json
+
