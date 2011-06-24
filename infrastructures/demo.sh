@@ -18,3 +18,4 @@ time knife ec2 server create -r 'role[base], role[mysql]'   \
   -f m1.large             \
   -d el6-fullstack
 
+
