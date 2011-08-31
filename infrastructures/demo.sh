@@ -1,5 +1,5 @@
 time knife ec2 server create -r 'role[base], role[monitoring]'  \
-  -N monitoring-1.dev.us-east-1.aws.911memorial.org             \
+  -N monitoring-1.dev.us-east-1.aws.example.org             \
   -E dev                  \
   -G demo                 \
   -I ami-5e837b37         \
@@ -9,7 +9,7 @@ time knife ec2 server create -r 'role[base], role[monitoring]'  \
   -d el6-fullstack
 
 time knife ec2 server create -r 'role[base], role[mysql]'   \
-  -N mysql-1.dev.us-east-1.aws.911memorial.org              \
+  -N mysql-1.dev.us-east-1.aws.example.org              \
   -E dev                  \
   -G demo                 \
   -I ami-5e837b37         \
