@@ -39,8 +39,11 @@ rpm --import http://ftp2.scientificlinux.org/linux/scientific/6.0/x86_64/os/RPM-
 #rpm --import https://www.scientificlinux.org/documentation/gpg/RPM-GPG-KEY-atrpms
 #rpm --import https://www.scientificlinux.org/documentation/gpg/RPM-GPG-KEY-atrpms
 
-curl http://yum.afistfulofservers.net/affs/el6-repos/sl6.repo > /etc/yum.repos.d/sl.repo 
-rpm -Uvh http://ftp.scientificlinux.org/linux/scientific/6.0/x86_64/os/Packages/elrepo-release-6-2.el6.elrepo.noarch.rpm
+
+rpm -Uvh http://s3.amazonaws.com/opscode-full-stack/el-6.0-x86_64/chef-full-0.10.4-1.x86_64.rpm
+/opt/opscode/setup.sh
+mkdir -p /etc/chef
+
 
 # epel - official backports
 rpm -Uvh http://mirror.pnl.gov/epel/6/x86_64/epel-release-6-5.noarch.rpm
